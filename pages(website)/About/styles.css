@@ -1,0 +1,34 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todoTable {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#todoTable th,
+#todoTable td {
+    border: 1px solid magenta;
+    padding: 8px;
+    text-align: left;
+}
+
+#todoTable th {
+    background-color: gray;
+}
+
+#todoTable tr:nth-child(even) {
+    background-color: magenta;
+}
+
+#todoTable tr:hover {
+    background-color: gray;
+}

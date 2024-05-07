@@ -1,0 +1,239 @@
+/* @keyframes arrow {
+    0%{
+        font-size: 54px;
+        color:#49cc88;
+    }
+    25%{
+        font-size: 56px;
+        color: #3c9e7a;
+    }
+    50%{
+        font-size: 58px;
+        color: #49cc88;
+    }
+    75%{
+        font-size: 60px;
+        color: #3c9e7a;
+    }
+    90%{
+        font-size: 62px;
+        color: #49cc88;
+    }
+    100%{
+        font-size: 64px;
+        color: #3c9e7a;
+    }
+} */
+
+body {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../../assets/image.png");
+  background-repeat: no-repeat;
+  font-family: "Poppins", serif;
+  z-index: 1;
+  background-color: blue;
+  color: #f1f8fb;
+}
+nav {
+  background-color: magenta;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 1rem 0.25rem;
+  height: 100px;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+nav .nav-items ul {
+  list-style: none;
+}
+nav .nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+nav .nav-items ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: 7ms ease-out;
+}
+nav .nav-items ul li a:hover {
+  color: #4eca8b;
+  color: #57524c;
+  /* font-weight: 600; */
+}
+#btn {
+  color: inherit;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #4eca8b;
+  background-color: #4eca8b;
+  transition: 7ms ease-out;
+}
+#btn:hover {
+  border: 1px solid #3c9e7a;
+  background-color: #3c9e7a;
+}
+#envelope {
+  color: #4eca8b;
+}
+.section-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 36px;
+  /* background-color: magenta; */
+}
+.section-container h1 {
+  color: #b7e1f2;
+}
+.section-container .text {
+  font-size: 28px;
+  position: relative;
+  bottom: 2rem;
+}
+#color {
+  color: #49cc88;
+}
+#service-btn {
+  cursor: pointer;
+  border: 2px solid #4eca8b;
+  background: transparent;
+  width: 200px;
+  height: 50px;
+  color: #f1f8fb;
+  font-weight: 500;
+  transition: 7ms ease-out;
+}
+#service-btn:hover {
+  background-color: #3c9e7a;
+  border: none;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.logos .item {
+  font-size: 54px;
+  cursor: pointer;
+  transition: 7ms ease-out;
+}
+.logos .item:hover {
+  color: #3c9e7a;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  font-size: 64px;
+  cursor: pointer;
+  color: #3c9e7a;
+  transition: 0.5s ease-out;
+  /* animation: arrow 1s linear infinite; */
+}
+.arrow:hover {
+  color: #49cc88;
+}
+#hamburger{
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 860px) {
+  nav {
+    font-size: small;
+  }
+  .logos .item {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 742px) {
+  .section-container .text {
+    font-size: 24px;
+  }
+  nav .nav-items {
+    display: none;
+  }
+}
+@media screen and (max-width: 688px) {
+
+  .logos{
+    gap: 2rem;
+  }
+  .logos .item {
+    font-size: 24px;
+  }
+  .section-container{
+  font-size: 24px;  
+  }
+
+}
+@media screen and (max-width: 586px) {
+  .section-container{
+    align-items: center;
+    justify-content: center;
+  }
+
+.section-container h1{
+  font-size: 24px;
+  text-align: center;
+}
+.section-container .text{
+  font-size: 20px;
+  text-align: center;
+}
+.logos{
+  align-items: center;
+  justify-content: center;
+}
+
+}
+@media screen and (max-width: 418px) {
+
+  .section-container h1{
+    font-size: 20px;
+  }
+  .section-container .text{
+    font-size: 16px;
+    bottom: 1rem;
+  }
+  .logos{
+    gap: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width: 742px) {
+  #hamburger{
+    display: none;
+  }
+}
+
+
